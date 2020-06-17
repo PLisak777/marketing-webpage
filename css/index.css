@@ -132,6 +132,10 @@ table {
   box-sizing: border-box;
   outline: 0;
 }
+body {
+  line-height: 1;
+  font-family: 'Montserrat', sans-serif;
+}
 img {
   max-width: 100%;
 }
@@ -179,7 +183,7 @@ ol li {
   margin: 0 auto;
 }
 header {
-  background-color: #778DA9;
+  background-color: transparent;
   width: 100%;
   position: relative;
 }
@@ -209,4 +213,54 @@ nav.nav-wrapper ul li a {
 }
 nav.nav-wrapper ul li a:hover {
   border-bottom: 1px solid #FCEFF9;
+}
+header .logo img {
+  max-width: 100px;
+}
+.cover-main {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/working-from-home.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
+ul#scene li.name {
+  text-align: center;
+  font-size: 40px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: #FCEFF9;
+  width: 100%;
+}
+ul#scene li.title {
+  text-align: center;
+  font-size: 30px;
+  line-height: 35px;
+  color: #FCEFF9;
+  width: 100%;
+  margin-top: 60px;
+}
+ul#scene {
+  margin-top: 100px;
+}
+.btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 75px;
+}
+.signup-btn {
+  margin: 0 auto;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid white;
+  background: transparent;
+  color: #FCEFF9;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.signup-btn:hover {
+  background: #778DA9;
+  color: black;
+}
+.signup-btn {
+  margin: 0 auto;
 }
