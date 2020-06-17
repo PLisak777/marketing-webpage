@@ -38,7 +38,7 @@ nav.nav-wrapper ul li a {
 }
 
 nav.nav-wrapper ul li a:hover {
-    border-bottom: 1px solid @text-color;
+    border-bottom: 1px solid @shadow;
 }
 
 header .logo img {
@@ -84,18 +84,45 @@ ul#scene {
     margin: 0 auto;
     display: inline-block;
     padding: 10px 20px;
-    border: 1px solid white;
-    background: transparent;
+    border: 1px solid @twilight;
+    background: @background;
     color: @blush;
     text-decoration: none;
     transition: 0.3s;
 } 
 
 .signup-btn:hover {
-    background: @background;
-    color: black;
+    background: @twilight;
+    color: @blush;
 }
 
-.signup-btn {
+.nav-btn {
+    display: flex;
     margin: 0 auto;
+}
+
+.signup,
+.contact {
+    margin: 0 auto;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid @twilight;
+    background: @background;
+    color: @blush;
+    text-decoration: none;
+    transition: 0.3s;
+} 
+
+.signup:hover,
+.contact:hover {
+    background: @twilight;
+    color: @blush;
+}
+
+.signup {
+    margin-right: 30px;
+}
+
+.contact {
+    margin-left: 30px;
 }

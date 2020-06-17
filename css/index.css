@@ -212,7 +212,7 @@ nav.nav-wrapper ul li a {
   transition: 0.3s;
 }
 nav.nav-wrapper ul li a:hover {
-  border-bottom: 1px solid #FCEFF9;
+  border-bottom: 1px solid #778DA9;
 }
 header .logo img {
   max-width: 100px;
@@ -251,18 +251,41 @@ ul#scene {
   margin: 0 auto;
   display: inline-block;
   padding: 10px 20px;
-  border: 1px solid white;
-  background: transparent;
+  border: 1px solid #7E4E60;
+  background: #778DA9;
   color: #FCEFF9;
   text-decoration: none;
   transition: 0.3s;
 }
 .signup-btn:hover {
-  background: #778DA9;
-  color: black;
+  background: #7E4E60;
+  color: #FCEFF9;
 }
-.signup-btn {
+.nav-btn {
+  display: flex;
   margin: 0 auto;
+}
+.signup,
+.contact {
+  margin: 0 auto;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #7E4E60;
+  background: #778DA9;
+  color: #FCEFF9;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.signup:hover,
+.contact:hover {
+  background: #7E4E60;
+  color: #FCEFF9;
+}
+.signup {
+  margin-right: 30px;
+}
+.contact {
+  margin-left: 30px;
 }
 .grid {
   margin: 0 auto;
