@@ -340,3 +340,25 @@ h2.sub-title::after {
     max-width: 100%;
   }
 }
+footer {
+  position: relative;
+  z-index: -2;
+  height: 150px;
+  background: #778DA9;
+  color: #FCEFF9;
+  font-size: 12px;
+  text-align: center;
+}
+footer h1 {
+  position: fixed;
+  font-size: 20px;
+  line-height: 25px;
+  color: #FCEFF9;
+  font-weight: bold;
+  text-align: center;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 800px;
+  z-index: 1;
+}
