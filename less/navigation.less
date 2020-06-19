@@ -1,13 +1,15 @@
-.wrapper {
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 auto;
+/* HEADER STYLES START */
+
+.cover-main {
+    z-index: 9;
+    padding-top: 100px;
 }
 
 header {
     background-color: transparent;
     width: 100%;
-    position: relative;
+    position: fixed;
+    top: 0px;
 }
 
 .nav-wrapper {
@@ -20,13 +22,6 @@ header {
     align-items: center;
 }
 
-.nav-wrapper p {
-    font-size: 3rem;
-    text-align: left;
-    color: @text-color;
-    position: relative;
-}
-
 nav.nav-wrapper ul li {
     display: inline-block;
     padding: 0 10px;
@@ -34,102 +29,34 @@ nav.nav-wrapper ul li {
 }
 
 nav.nav-wrapper ul li a {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     line-height: 22px;
     text-decoration: none;
-    color: @text-color;
+    color: olivedrab;
     cursor: pointer;
     border-bottom: 1px solid transparent;
     padding-bottom: 3px;
     transition: 0.3s;
 }
 
-nav.nav-wrapper ul li a:hover {
-    border-bottom: 1px solid @shadow;
+nav.nav-wrapper ul li a.register {
+    color: #7E4E60;
+    font-weight: 700;
+}
+
+header .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .logo p {
+    font-size: 2rem;
 }
 
 header .logo img {
     max-width: 100px;
 }
 
-.cover-main {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/working-from-home.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 60vh; 
-}
 
-ul#scene li.name {
-    text-align: center;
-    font-size: 40px;
-    line-height: 45px;
-    text-transform: uppercase;
-    color: @blush;
-    width: 100%;
-}
-
-ul#scene li.title {
-    text-align: center;
-    font-size: 30px;
-    line-height: 35px;
-    color: @blush;
-    width: 100%;
-    margin-top: 60px;
-}
-
-ul#scene {
-    margin-top: 100px;
-}
-
-.btn {
-    width: 100%;
-    text-align: center;
-    margin-top: 75px;
-}
-
-.signup-btn {
-    margin: 0 auto;
-    display: inline-block;
-    padding: 10px 20px;
-    border: 1px solid @twilight;
-    background: @background;
-    color: @blush;
-    text-decoration: none;
-    transition: 0.3s;
-} 
-
-.signup-btn:hover {
-    background: @twilight;
-    color: @blush;
-}
-
-.nav-btn {
-    display: flex;
-    margin: 0 auto;
-}
-
-.signup,
-.contact {
-    margin: 0 auto;
-    display: inline-block;
-    padding: 10px 20px;
-    border: 1px solid @twilight;
-    background: @background;
-    color: @blush;
-    text-decoration: none;
-    transition: 0.3s;
-} 
-
-.signup:hover,
-.contact:hover {
-    background: @twilight;
-    color: @blush;
-}
-
-.signup {
-    margin-right: 30px;
-}
-
-.contact {
-    margin-left: 30px;
-}
+/* HEADER STYLES END */
