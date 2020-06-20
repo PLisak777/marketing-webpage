@@ -9,6 +9,22 @@
 body {
     line-height: 1;
     font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body::after {
+    content: "";
+    background: url(../images/eight.jpg);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
 }
 
 img {
