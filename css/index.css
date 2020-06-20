@@ -256,6 +256,7 @@ div.signup {
 }
 .signup .share {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -263,8 +264,13 @@ div.signup {
   margin-top: 150px;
   font-size: 4rem;
   font-weight: 700;
-  color: white;
+  color: #FCEFF9;
   font-family: 'Playfair Display', sans-serif;
+}
+@media (max-width: 800px) {
+  .signup .share {
+    text-align: center;
+  }
 }
 div.signup a {
   margin-bottom: 75px;
@@ -278,6 +284,54 @@ div.signup a {
   font-family: 'Oswald', sans-serif;
   text-decoration: none;
   color: white;
+}
+body section.action {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1200px;
+  width: 45%;
+  margin: 50px auto;
+  line-height: 2rem;
+  font-family: "Playfair Display", sans-serif;
+  color: #7E4E60;
+  text-shadow: 1px 1px 2px #7E4E60;
+}
+section.action h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+section.action p {
+  font-size: 1.5rem;
+}
+section.action .image img {
+  margin-top: 50px;
+  border-radius: 10px;
+}
+.aside a {
+  float: right;
+  margin-left: 1rem;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: #7E4E60;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1.5rem;
+  border-radius: 0.5em;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  color: white;
+}
+@media (max-width: 800px) {
+  section.action p {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  .aside a {
+    display: flex;
+    float: left;
+    margin-right: 1rem;
+  }
 }
 .body-main {
   max-width: 1200px;
@@ -293,7 +347,7 @@ div.signup a {
   color: #7E4E60;
   text-shadow: 2px 2px 4px #7E4E60;
   width: 40%;
-  margin: 100px auto 50px 100px;
+  margin: 50px auto 50px 100px;
   font-size: 2.8rem;
   font-family: "Playfair Display", sans-serif;
   font-weight: 700;
@@ -310,6 +364,13 @@ div.signup a {
 }
 .body-main .wrapper .wrapper .grid-bg {
   width: 100%;
+}
+@media (max-width: 800px) {
+  .body-main .ad-copy h1 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    flex-flow: column wrap;
+  }
 }
 .tagline h1 {
   display: block;
