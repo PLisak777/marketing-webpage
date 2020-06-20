@@ -173,7 +173,7 @@ ol li {
   padding-top: 100px;
 }
 header {
-  background-color: transparent;
+  background-color: white;
   width: 100%;
   position: fixed;
   top: 0px;
@@ -234,6 +234,7 @@ div.signup {
   align-items: center;
   margin: 0 auto;
   margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .signup .share {
   display: flex;
@@ -259,5 +260,44 @@ div.signup a {
   font-family: 'Oswald', sans-serif;
   text-decoration: none;
   color: white;
+}
+.body-main {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.body-main .ad-copy h1 {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 40%;
+  margin: 100px auto auto 100px;
+  font-size: 2.8rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}
+.body-main .wrapper {
+  box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.body-main .wrapper .wrapper .grid-bg {
+  width: 100%;
+}
+.tagline h1 {
+  display: block;
+  text-align: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 2.8rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
 }
 /* HOMEPAGE STYLES END */
