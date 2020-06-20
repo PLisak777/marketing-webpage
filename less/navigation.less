@@ -3,13 +3,12 @@
 .cover-main {
     z-index: 9;
     padding-top: 100px;
-}
-
-header {
-    background-color: white;
-    width: 100%;
-    position: fixed;
-    top: 0px;
+    header {
+        background-color: white;
+        width: 100%;
+        position: fixed;
+        top: 0px;
+    }
 }
 
 .nav-wrapper {
@@ -20,6 +19,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media(max-width: 800px) {
+    .nav-wrapper {
+        flex-flow: column wrap;
+    }
 }
 
 nav.nav-wrapper ul li {
@@ -39,6 +44,16 @@ nav.nav-wrapper ul li a {
     transition: 0.3s;
 }
 
+@media(max-width: 800px) {
+    nav.nav-wrapper ul.menu {
+        display: flex;
+        // flex-direction: column;
+    }
+    nav.nav-wrapper ul.menu .navlist {
+        display: none;
+    }
+}
+
 nav.nav-wrapper ul li a.register {
     color: #7E4E60;
     font-weight: 700;
@@ -53,6 +68,12 @@ header .logo {
 header .logo p {
     font-size: 3rem;
     font-weight: 700;
+}
+
+@media(max-width: 1052px) {
+    header .logo p {
+        font-size: 2rem;
+    }
 }
 
 header .logo img {
