@@ -4,13 +4,10 @@
     align-items: @align;
 }
 
-@justify: space-between;
-@align: center;
-
 .btn {
     display: inline-block;
     box-sizing: border-box;
-    background-color: #7E4E60;
+    background-color: @twilight;
     font-size: 1.6rem;
     font-weight: 700;
     padding: 1.5rem;
@@ -18,4 +15,12 @@
     font-family: 'Oswald', sans-serif;
     text-decoration: none;
     color: white;
+} 
+
+.feature-box {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
 }
