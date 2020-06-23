@@ -403,6 +403,38 @@ section.action .image img {
   font-weight: 700;
 }
 /* HOMEPAGE STYLES END */
+body section.features {
+  font-family: "Playfair Display", sans-serif;
+  display: inline-block;
+  box-sizing: border-box;
+  color: #36311F;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.features .heads {
+  max-width: 1200px;
+  width: 30%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.features .heads h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 2;
+}
+.features .heads h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0 auto;
+}
+.feature-list {
+  width: 30%;
+}
+.feature-list .feat1 {
+  border: 1px solid red;
+}
 footer {
   max-width: 100%;
   width: 100%;
