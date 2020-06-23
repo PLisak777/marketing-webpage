@@ -148,6 +148,7 @@ body {
   line-height: 1;
   font-family: 'Montserrat', sans-serif;
   height: 100vh;
+  background-color: #FCEFF9;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -404,19 +405,21 @@ section.action .image img {
 }
 /* HOMEPAGE STYLES END */
 body section.features {
+  max-width: 1200px;
+  width: 100%;
   font-family: "Playfair Display", sans-serif;
-  display: inline-block;
+  display: block;
   box-sizing: border-box;
   color: #36311F;
+  margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 .features .heads {
   max-width: 1200px;
-  width: 30%;
+  width: 50%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
   margin: 0 auto;
 }
 .features .heads h1 {
@@ -430,10 +433,37 @@ body section.features {
   margin: 0 auto;
 }
 .feature-list {
-  width: 30%;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 25px;
 }
-.feature-list .feat1 {
+.feature-list .feat-box1 {
   border: 1px solid red;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.feat-box1 li {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.feat-box1 img {
+  width: 500px;
+}
+.feature-list .feat-box2 {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.feature-list .feat-box3 {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 footer {
   max-width: 100%;
