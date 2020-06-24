@@ -260,6 +260,32 @@ header .logo img {
   max-width: 100px;
 }
 /* HEADER STYLES END */
+footer {
+  max-width: 100%;
+  width: 100%;
+  background: #FCEFF9;
+  color: #36311F;
+}
+footer div {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+footer h1 {
+  font-family: "Playfair Display", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+footer .socials img {
+  max-width: 40px;
+  margin-bottom: 10px;
+}
 /* HOMEPAGE STYLES START */
 div.signup {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/six.jpg');
@@ -586,30 +612,4 @@ body section.features {
   .feat-box3 {
     flex-flow: row wrap;
   }
-}
-footer {
-  max-width: 100%;
-  width: 100%;
-  background: #FCEFF9;
-  color: #36311F;
-}
-footer div {
-  max-width: 1200px;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 auto;
-}
-footer h1 {
-  font-family: "Playfair Display", sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-footer .socials img {
-  max-width: 40px;
-  margin-bottom: 10px;
 }
