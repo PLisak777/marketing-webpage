@@ -210,17 +210,12 @@ ol li {
   justify-content: space-between;
   align-items: center;
 }
-@media (max-width: 800px) {
-  .nav-wrapper {
-    flex-flow: column wrap;
-  }
-}
-nav.nav-wrapper ul li {
+.nav-wrapper ul li {
   display: inline-block;
   padding: 0 10px;
   margin-bottom: 0;
 }
-nav.nav-wrapper ul li a {
+.nav-wrapper ul li a {
   font-size: 1.5rem;
   line-height: 22px;
   text-decoration: none;
@@ -231,10 +226,15 @@ nav.nav-wrapper ul li a {
   transition: 0.3s;
 }
 @media (max-width: 800px) {
-  nav.nav-wrapper ul.menu {
+  .nav-wrapper {
+    flex-flow: column wrap;
+  }
+  .nav-wrapper ul.menu {
     display: flex;
   }
-  nav.nav-wrapper ul.menu .navlist {
+}
+@media (max-width: 800px) {
+  .navlist {
     display: none;
   }
 }
@@ -247,6 +247,9 @@ header .logo {
   justify-content: flex-start;
   align-items: center;
 }
+header .logo img {
+  max-width: 100px;
+}
 header .logo p {
   font-size: 3rem;
   font-weight: 700;
@@ -255,9 +258,6 @@ header .logo p {
   header .logo p {
     font-size: 2rem;
   }
-}
-header .logo img {
-  max-width: 100px;
 }
 /* HEADER STYLES END */
 footer {
@@ -274,7 +274,7 @@ footer div {
   align-items: center;
   margin: 0 auto;
 }
-footer h1 {
+footer div h1 {
   font-family: "Playfair Display", sans-serif;
   font-size: 2rem;
   font-weight: 700;
@@ -282,7 +282,7 @@ footer h1 {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-footer .socials img {
+.socials img {
   max-width: 40px;
   margin-bottom: 10px;
 }
@@ -304,7 +304,7 @@ div.signup {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-.signup .share {
+div.signup .share {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -347,12 +347,12 @@ body section.action {
   color: #36311F;
   text-shadow: 1px 1px 2px #7E4E60;
 }
-section.action h1 {
+body section.action h1 {
   font-size: 3rem;
   line-height: 1;
   text-align: center;
 }
-section.action p {
+body section.action h1 p {
   font-size: 2rem;
   line-height: 1;
   margin-top: 25px;
@@ -361,7 +361,7 @@ section.action p {
   align-items: center;
   flex-flow: row wrap;
 }
-section.action .image img {
+body section.action h1 p img {
   margin-top: 50px;
   border-radius: 10px;
 }
@@ -464,11 +464,21 @@ body section.features {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.features .heads {
+body section.features .heads {
   max-width: 1200px;
   width: 50%;
   display: flex;
   flex-flow: row wrap;
+  margin: 0 auto;
+}
+body section.features .heads h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 2;
+}
+.features .heads h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
   margin: 0 auto;
 }
 @media (max-width: 800px) {
@@ -476,20 +486,10 @@ body section.features {
     flex-flow: column wrap;
   }
 }
-.features .heads h1 {
-  font-size: 4rem;
-  font-weight: 700;
-  line-height: 2;
-}
 @media (max-width: 800px) {
   .features .heads h1 {
-    line-height: 1;
+    line-height: 0.5;
   }
-}
-.features .heads h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin: 0 auto;
 }
 .feature-list {
   max-width: 1200px;
@@ -504,7 +504,7 @@ body section.features {
   justify-content: space-between;
   margin: 0 auto;
 }
-.feat-box1 img {
+.feature-list .feat-box1 img {
   width: 700px;
   border-radius: 10px;
 }
@@ -524,7 +524,7 @@ body section.features {
   font-weight: 600;
   line-height: 1;
 }
-.ftest1 p {
+.feat-box1 .ftest1 li p {
   font-size: 2rem;
   line-height: 1;
 }
@@ -541,7 +541,7 @@ body section.features {
   margin: 0 auto;
   margin-top: 25px;
 }
-.feat-box2 img {
+.feature-list .feat-box2 img {
   width: 700px;
   border-radius: 10px;
   order: -1;
@@ -562,7 +562,7 @@ body section.features {
   font-weight: 600;
   line-height: 1;
 }
-.ftest2 p {
+.feat-box2 .ftest2 p {
   font-size: 2rem;
   line-height: 1;
 }
@@ -584,7 +584,7 @@ body section.features {
   margin: 0 auto;
   margin-top: 25px;
 }
-.feat-box3 img {
+.feature-list .feat-box3 img {
   width: 700px;
   border-radius: 10px;
 }
@@ -604,7 +604,7 @@ body section.features {
   font-weight: 600;
   line-height: 1;
 }
-.ftest3 p {
+.feat-box3 .ftest3 li p {
   font-size: 2rem;
   line-height: 1;
 }
