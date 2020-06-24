@@ -310,30 +310,38 @@ div.signup a {
   color: white;
 }
 body section.action {
+  border: 1px solid red;
   box-sizing: border-box;
   display: flex;
   flex-flow: row wrap;
   max-width: 1200px;
-  width: 45%;
+  width: 100%;
   margin: 75px auto;
   line-height: 2rem;
   font-family: "Playfair Display", sans-serif;
-  color: #7E4E60;
+  color: #36311F;
   text-shadow: 1px 1px 2px #7E4E60;
 }
 section.action h1 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 3rem;
+  line-height: 1;
+  text-align: center;
 }
 section.action p {
   font-size: 1.5rem;
+  line-height: 1;
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 section.action .image img {
   margin-top: 50px;
   border-radius: 10px;
 }
 .aside a {
-  float: right;
+  float: center;
   margin-left: 1rem;
   display: inline-block;
   box-sizing: border-box;
@@ -357,58 +365,13 @@ section.action .image img {
     margin-right: 1rem;
   }
 }
-.body-main {
+.body-main .flex-section {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   display: flex;
   color: #7E4E60;
   flex-wrap: wrap;
-}
-.body-main .ad-copy h1 {
-  display: inline-block;
-  box-sizing: border-box;
-  color: #7E4E60;
-  text-shadow: 2px 2px 4px #7E4E60;
-  width: 40%;
-  margin: 50px auto 50px 100px;
-  font-size: 2.8rem;
-  font-family: "Playfair Display", sans-serif;
-  font-weight: 700;
-}
-.body-main .wrapper {
-  box-shadow: 12px 29px 81px 0px rgba(0, 0, 0, 0.75);
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  display: flex;
-  flex-flow: row wrap;
-}
-.body-main .wrapper .grid-bg {
-  width: 100%;
-  border-radius: 10px;
-}
-@media (max-width: 800px) {
-  .body-main .ad-copy h1 {
-    margin-top: 25px;
-    margin-bottom: 25px;
-    flex-flow: column wrap;
-  }
-}
-.tagline h1 {
-  display: block;
-  text-align: center;
-  color: #7E4E60;
-  text-shadow: 2px 2px 4px #7E4E60;
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  font-size: 2.5rem;
-  font-family: "Playfair Display", sans-serif;
-  font-weight: 700;
 }
 /* HOMEPAGE STYLES END */
 body section.features {
